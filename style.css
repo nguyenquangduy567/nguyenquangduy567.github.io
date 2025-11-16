@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.sidebar {
+    width: 340px;
+    background: #5a5f6f;
+    color: white;
+    padding: 50px 35px;
+}
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid white;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.job-title {
+    font-size: 16px;
+    font-style: italic;
+}
+.sidebar-box {
+    margin-bottom: 35px;
+}
+
+.sidebar-box h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+}
+
+.sidebar-box p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.sidebar-box strong {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 3px;
+    opacity: 0.8;
+}
+.sidebar-box ul {
+    list-style: none;
+}
+
+.sidebar-box li {
+    padding: 10px 0;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.sidebar-box li:before {
+    content: "– ";
+}
+.main-content {
+    flex: 1;
+    padding: 50px 60px;
+}
+
+.content-box {
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #5a5f6f;
+}
+.work-item {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.work-item:last-child {
+    border-bottom: none;
+}
+
+.work-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #5a5f6f;
+    margin-bottom: 10px;
+}
+
+.work-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.work-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.work-item li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.work-item li:before {
+    content: "– ";
+    font-weight: bold;
+    color: #5a5f6f;
+}
+
+.hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.hobbies p {
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .hobbies {
+        grid-template-columns: 1fr;
+    }
+}
+@media print {
+    body {
+        background: white;
+    }
+
+    .container {
+        box-shadow: none;
+    }
+}
